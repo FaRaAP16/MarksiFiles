@@ -46,10 +46,10 @@ local UserNum = DevAbs:get(DevProx.."Abs:ProNames:UserNum"..msg.chat_id_..msg.se
 if (tonumber(UserNum) == tonumber(ProNamesTxt) or tonumber(UserNum) > tonumber(ProNamesTxt)) then 
 DevAbs:sadd(DevProx..'Abs:Muted:'..msg.chat_id_, msg.sender_user_id_)
 DevAbs:del(DevProx.."Abs:ProNames:UserNum"..msg.chat_id_..msg.sender_user_id_)
-send(msg.chat_id_, msg.id_,"⌁︙العضو ↫ ["..result.first_name_.."](https://t.me/"..(result.username_ or "Dev_Prox")..")\n⌁︙تم كتمه بسبب عدم وضع توحيد المجموعه بجانب اسمه يجب عليه وضع التوحيد وسوف يتم الغاء كتمه تلقائيا")
+send(msg.chat_id_, msg.id_,"⌁︙العضو ↫ ["..result.first_name_.."](https://t.me/"..(result.username_ or "Iraqiatheists1")..")\n⌁︙تم كتمه بسبب عدم وضع توحيد المجموعه بجانب اسمه يجب عليه وضع التوحيد وسوف يتم الغاء كتمه تلقائيا")
 else 
 DevAbs:incrby(DevProx.."Abs:ProNames:UserNum"..msg.chat_id_..msg.sender_user_id_,1)
-send(msg.chat_id_, msg.id_, "⌁︙عذرا عزيزي ↫ ["..result.first_name_.."](https://t.me/"..(result.username_ or "Dev_Prox")..")\n⌁︙عليك وضع التوحيد ↫ `"..DevAbs:get(DevProx.."Abs:ProNames:Txt"..msg.chat_id_).."` بجانب اسمك\n⌁︙عدد المحاولات المتبقيه ↫ "..(tonumber(ProNamesTxt) - tonumber(UserNum)).."")
+send(msg.chat_id_, msg.id_, "⌁︙عذرا عزيزي ↫ ["..result.first_name_.."](https://t.me/"..(result.username_ or "Iraqiatheists1")..")\n⌁︙عليك وضع التوحيد ↫ `"..DevAbs:get(DevProx.."Abs:ProNames:Txt"..msg.chat_id_).."` بجانب اسمك\n⌁︙عدد المحاولات المتبقيه ↫ "..(tonumber(ProNamesTxt) - tonumber(UserNum)).."")
 end
 end
 end
